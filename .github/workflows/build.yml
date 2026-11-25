@@ -20,7 +20,7 @@ jobs:
         run: |
           cp node_modules/three/build/three.min.js www/
           cp -r node_modules/three/examples/js www/three-ex
-          sed -i 's|https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js|three.min.js|; s|https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/|three-ex/|g' www/game.html
+          sed -i 's|https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js|three.min.js|; s|https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/|three-ex/|g' www/index.html
       - run: npx cap add android
       - run: npx cap sync android
       - name: Полноэкранный режим и альбомная ориентация
